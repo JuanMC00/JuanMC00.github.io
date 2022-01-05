@@ -11589,6 +11589,7 @@ html {
   font-size: 2.25rem;
   line-height: 2rem;
 }
+
 @media (min-width: 992px) {
   .portfolio-modal .portfolio-modal-title {
     font-size: 3rem;
@@ -11616,6 +11617,7 @@ html {
 #descriptPersonal,
 #descriptGeneral{
   font-size: 1.2rem;
+  margin-right: 2rem;
   line-height: 25px;
   text-align: justify;
 }
@@ -11642,9 +11644,12 @@ html {
   margin-left: 100px !important;
   margin-right: 100px !important;
   }
+  #descriptGeneral{
+    margin-right: 2rem;
+  }
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 992px) {
   #imgAbout{
    width: 50%;
    display: block;
