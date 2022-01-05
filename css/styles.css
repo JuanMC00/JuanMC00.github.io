@@ -1425,7 +1425,7 @@ progress {
 
   .col-lg-4 {
     flex: 0 0 auto;
-    width: 33.33333333%;
+    width: 33.33333333%;    
   }
 
   .col-lg-5 {
@@ -11339,9 +11339,10 @@ html {
 
 .page-section {
   padding: 6rem 0;
-  margin-left: 200px;
-  margin-right: 200px;
+  max-width: 1500px;
   padding-bottom: 10px;
+  display: block;
+  margin: auto;
 }
 
 .page-section .page-section-heading {
@@ -11609,16 +11610,64 @@ html {
 /* Added */
 #aspectosAbout{
   font-weight: bold;
+  text-align: center;
 }
 
-#descriptAbout{
+#descriptPersonal,
+#descriptGeneral{
   font-size: 1.2rem;
+  line-height: 25px;
+  text-align: justify;
 }
 
 #imgAbout{
-  height: 40rem;
-  width: 30rem;
+  box-sizing: border-box;
+  width: 100%;
 }
+
+@media (max-width: 1800px) {
+  .page-section{
+  padding: 6rem 0;
+  margin-left: 200px !important;
+  margin-right: 200px !important;
+  max-width: 1500px;
+  padding-bottom: 10px;
+  display:block;
+  margin: auto;
+  }
+}
+
+@media (max-width: 1500px) {
+  .page-section{
+  margin-left: 100px !important;
+  margin-right: 100px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  #imgAbout{
+   width: 50%;
+   display: block;
+   margin: auto;
+  }
+  #descriptGeneral{
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  #aspectosAbout{
+    text-align: center;   
+  }
+  #imgAbout{
+   display: none;
+  }
+  .page-section{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    }
+  }
+
 
 .hobbieIcon{
   margin-top: 5px;

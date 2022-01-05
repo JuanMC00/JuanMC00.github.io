@@ -78,13 +78,13 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead"><b id="aspectosAbout">Aspectos generales:</b><br/><ul id="descriptAbout">Nombre: Juan Muñoz Calvo<br/>Edad: 21</br>Profesión: Estudiante de 4º de Ingeniería Informática<br/>Residencia: Ciudad Real</ul></p><img id="imgAbout" src="assets/img/perfil.jpg" alt="..." /></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"><b id="aspectosAbout">Aspectos personales:</b><br/><ul id="descriptAbout">Hola, mi nombre es Juan y soy estudiante de 4º curso de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real (Universidad de Castilla-La Mancha) especializado en las Tecnologías de la Información.<br/>Me considero una persona trabajadora, ordenada y curiosa. Pero creo que os puedo contar mi personalidad mejor si os guio por mis diferentes aficiones:<br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/rubik.png">: Hola <br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/piano.png">: Hola <br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/karate.png">: Hola <br/>
+                    <div class="col-lg-4 ms-auto"><p class="lead"><b id="aspectosAbout">Aspectos generales:</b><br/><ul id="descriptGeneral">Nombre: Juan Muñoz Calvo<br/>Edad: 21</br>Profesión: Estudiante de 4º de Ingeniería Informática<br/>Residencia: Ciudad Real</ul></p><img id="imgAbout" src="assets/img/perfil.jpg" alt="..." /></div>
+                    <div class="col-lg-4 me-auto"><p class="lead"><b id="aspectosAbout">Aspectos personales:</b><br/><ul id="descriptPersonal">Hola, mi nombre es Juan y soy estudiante de 4º curso de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real (Universidad de Castilla-La Mancha) especializado en las Tecnologías de la Información.<br/>Me considero una persona trabajadora, ordenada y curiosa. Pero creo nuestras aficiones son lo que mejor nos describen:<br/><br/>
+                        <img class="hobbieIcon" src="assets/img/hobbies/rubik.png">: Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solo con el cubo hecho sin saber lo que hay detrás<br/>
+                        <img class="hobbieIcon" src="assets/img/hobbies/piano.png">: Me considero una persona creativa que le gusta disfruta tambien de la belleza de lo simple.<br/>
+                        <img class="hobbieIcon" src="assets/img/hobbies/karate.png">: La mitad de mi vida que practiqué este deporte me aportó disciplina y respeto por los demás <br/>
                         <img class="hobbieIcon" src="assets/img/hobbies/ajedrez.png">: Hola <br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/viajar.png">: Hola <br/>
+                        <img class="hobbieIcon" src="assets/img/hobbies/viajar.png">: Me gusta mucho descubrir cosas nuevas que pueda incorporar a mi forma de trabajar. Estoy siempre abierto a concoer nuevas tecnologías y neuvas culturas<br/>
                     </div>
                 </div>
             </div>
@@ -205,61 +205,7 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center">
-                    <div class="col-lg-8 col-xl-7">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                                <label for="name">Full name</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
-                            </div>
-                            <!-- Email address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                                <label for="email">Email address</label>
-                                <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                                <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                            </div>
-                            <!-- Phone number input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="phone" type="tel" placeholder="(123) 456-7890" data-sb-validations="required" />
-                                <label for="phone">Phone number</label>
-                                <div class="invalid-feedback" data-sb-feedback="phone:required">A phone number is required.</div>
-                            </div>
-                            <!-- Message input-->
-                            <div class="form-floating mb-3">
-                                <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                                <label for="message">Message</label>
-                                <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
-                            <!-- Submit Button-->
-                            <button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">Send</button>
-                        </form>
-                    </div>
+                   <p>Si quieres contactar conmigo para cualquier duda hazlo por medio </p>
                 </div>
             </div>
         </section>
