@@ -11612,16 +11612,25 @@ html {
 
 /********************************************** CUSTOM **********************************************/
 
+.lineHeightNormal{
+  line-height: normal;
+}
+
 #aspectosAbout{
   font-weight: bold;
 }
 
-#descriptPersonal,
 #descriptGeneral{
   font-size: 1.2rem;
   margin-right: 2rem;
   line-height: 25px;
+}
+
+#descriptPersonal{
+  font-size: 1.2rem;
+  line-height: 25px;
   text-align: justify;
+  margin-left: 1.2rem;
 }
 
 #imgAbout{
@@ -11653,9 +11662,16 @@ html {
    width: 50% !important;
    display: block !important;
    margin: auto !important;
+   padding-bottom: 2rem;
   }
   #descriptGeneral{
     text-align: center !important;
+  }
+  .hobbie{
+    align-items: center;
+  }
+  .hobbieIcon{
+    margin-top: 0px !important;
   }
 }
 
@@ -11672,22 +11688,35 @@ html {
     }
   }
 
+#divSeparador{
+  padding-top: 5px ;
+  padding-bottom: 5px;
+}
+
 .hobbie{
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  flex-direction: row;  
 }
 
 .hobbieIcon{
-  align-items: center;
   height: 32px;
   width: 32px;
+  margin-top: 7px;
 }
 
 .hobbieText{
+  font-size: 1.2rem;
   padding-left: 15px;
+  text-align: justify;
+  line-height: normal;
+}
+
+#textPortfolio{
+  padding-top: 2rem;
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
 }
 
 #contact{
@@ -11703,10 +11732,8 @@ html {
 #descriptContact{
   font-family: var(--bs-font-sans-serif);
   font-size: 1.2rem;
-  text-align: justify;
+  text-align: center;
 }
-
-
 
 .colFooter {
   flex: 0 0 auto;
@@ -11717,10 +11744,13 @@ html {
   .rowFooter{
     flex-direction: column !important;
     align-items: center;
-  }  
+  }
+  .colFooter{
+    padding-bottom: 2rem;
+  }
 }
 
-/* PROGRESS BARS SKILLS */
+/********************************************** PROGRESS BARS SKILLS **********************************************/
 .progress-container {
   position: relative;
 }

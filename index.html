@@ -41,7 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre mí</a></li>
-                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#competencias">skills</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#skills">Competencias</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
                     </ul>
@@ -81,43 +81,57 @@
                 <div class="row">
                     <div class="col-lg-5 ms-auto">
                         <p class="lead"><b id="aspectosAbout">Aspectos generales</b>
-                            <ul id="descriptGeneral">Nombre: Juan Muñoz Calvo<br/>Edad: 21</br>Profesión: Estudiante de 4º de Ingeniería Informática<br/>Residencia: Ciudad Real</ul></p><img id="imgAbout" src="assets/img/perfil.jpg" alt="..." /></div>
+                            <ul class="lineHeightNormal" id="descriptGeneral">Nombre: Juan Muñoz Calvo<br/>Edad: 21</br>Profesión: Estudiante de 4º de Ingeniería Informática<br/>Residencia: Ciudad Real</ul></p><img id="imgAbout" src="assets/img/perfil.jpg" alt="..." /></div>
                     <div class="col-lg-5 me-auto">
+                        
                         <p class="lead"><b id="aspectosAbout">Aspectos personales</b>
-                            <ul id="descriptPersonal">Hola, mi nombre es Juan y soy estudiante de 4º curso de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real (Universidad de Castilla-La Mancha) especializado en las Tecnologías de la Información.<br/>Me considero una persona trabajadora, ordenada y curiosa. Pero creo nuestras aficiones son lo que mejor nos describen:<br/><br/>
+                        
+                        <p class="lineHeightNormal" id="descriptPersonal">Hola, mi nombre es Juan y soy estudiante de 4º curso de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real (Universidad de Castilla-La Mancha) especializado en las Tecnologías de la Información.<br/>Para hablar de mi personalidad he querido hacerlo utilizando mis aficciones como hilo conductor y haciendo un simil con las habilidades no técnicas que estas me han proporcionado:</p>
                         
                         <!-- Hobbies Section -->
-                        <div>
+                        <div style="margin-left: 2rem;">
                             <div class="hobbie">
                                 <div><img class="hobbieIcon" src="assets/img/hobbies/rubik.png"></div>
-                                <div class="hobbieText">
-                                    <span>Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solo con el cubo hecho sin saber lo que hay detrás.<span><br/>
+                                <div class="hobbieText me-auto">
+                                    <span>Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solamente con el cubo hecho sin saber lo que hay detrás.<span><br/>
                                 </div>
                             </div>
+
+                            <div id="divSeparador"></div>
+
                             <div class="hobbie">
                                 <div><img class="hobbieIcon" src="assets/img/hobbies/piano.png"></div>
                                 <div class="hobbieText">
-                                    <span>Me considero una persona creativa que le gusta disfruta tambien de la belleza de lo simple.<br/></span>
+                                    <span>Me considero una persona creativa y que disfurta de la belleza de lo simple.<br/></span>
                                 </div>
                             </div>
+
+                            <div id="divSeparador"></div>
+
                             <div class="hobbie">
                                 <div><img class="hobbieIcon" src="assets/img/hobbies/karate.png"></div>
                                 <div class="hobbieText">
                                     <span>La mitad de mi vida que practiqué este deporte me aportó disciplina y respeto por los demás.<br/></span>
                                 </div>
                             </div>
+
+                            <div id="divSeparador"></div>
+
                             <div class="hobbie">
                                 <div><img class="hobbieIcon" src="assets/img/hobbies/ajedrez.png"></div>
                                 <div class="hobbieText">
-                                    <span>Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solo con el cubo hecho sin saber lo que hay detrás<br/></span>
+                                    <span>No soy una persona que se rinda facilmente pues siempre creo que existen muchas maneras de conseguir tus propósitos, solo hay que encontrarlas.<br/></span>
                                 </div>
                             </div>
+
+                            <div id="divSeparador"></div>
+                            
                             <div class="hobbie">
                                 <div><img class="hobbieIcon" src="assets/img/hobbies/viajar.png"></div>
                                 <div class="hobbieText">
-                                    <span>Me gusta mucho descubrir cosas nuevas que pueda incorporar a mi forma de trabajar. Estoy siempre abierto a concoer nuevas tecnologías y neuvas culturas.<br/></span>
-                                </div>
-                            </div>                                                    
+                                    <span>Me encanta descubrir cosas nuevas que pueda incorporar a mi forma de trabajar. Estoy siempre abierto a concoer nuevas tecnologías y neuvas culturas.<br/></span>
+                                </div>                                                                                 
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -318,7 +332,11 @@
                             <img class="img-fluid" src="assets/img/portfolio/meme.png" alt="..." />
                         </div>
                     </div>
-                    <p>Si quieres ver todos mis proyectos, accede a mi github
+                    <p id="textPortfolio">Si quieres ver todos mis proyectos, haz click a continuación:</p>
+                    <a class="btn btn-xl btn-outline-light " style="width: 275px;" href="https://github.com/JuanMC00?tab=repositories" target="_blank">
+                        <i class="fas fa-network-wired pe-1"></i>
+                        Mis Proyectos
+                    </a>
                 </div>
             </div>
         </section>
@@ -336,7 +354,7 @@
                 </div>
                 <!-- Contact Section Form-->
                 <div class="row justify-content-center divContact">
-                   <p id="descriptContact">Si quieres contactar conmigo para cualquier duda puedes hacerlo enviandome un mensaje a mi correo electrónico profesional:
+                   <p class="lineHeightNormal" id="descriptContact">Si quieres contactar conmigo para cualquier pregunta o sugerencia no dudes en hacerlo enviandome un mensaje a mi correo electrónico profesional:<br/>
                     <a href="mailto:juanmunozcalvo7@gmail.com" target="_blank">juanmunozcalvo7</a>
                    </p>
                 </div>
