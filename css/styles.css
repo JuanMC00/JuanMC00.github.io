@@ -11639,7 +11639,7 @@ html {
   width: 100%;
 }
 
-#divSeparador{
+.divSeparador{
   padding-top: 5px ;
   padding-bottom: 5px;
 }
@@ -11650,8 +11650,8 @@ html {
 }
 
 .hobbieIcon{
-  height: 48px;
-  width: 48px;
+  height: 42px;
+  width: 42px;
   margin-top: 7px;
 }
 
@@ -11660,6 +11660,28 @@ html {
   padding-left: 15px;
   text-align: justify;
   line-height: normal;
+}
+
+.divSoftSkills{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+  height: 50px;
+  width: 50px;
+}
+
+.divOtherSkills{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgOtherSkills{
+  display: block;
+  margin: auto;
+  height: 50px;
+  width: 50px;
 }
 
 #textPortfolio{
@@ -11731,6 +11753,12 @@ html {
   }
 }
 
+@media (max-width: 800px) {
+  .textSoftSkills{
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .hobbie{
     flex-direction: column !important;
@@ -11754,11 +11782,18 @@ html {
     margin-left: 0px !important;
     margin-right: 0px !important;
   }
+  .textSoftSkills{
+    display: block;
+    font-size: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
   #imgAbout{
    display: none !important;
+  }
+  .textSoftSkills{
+    display: none;
   }
 }
 
