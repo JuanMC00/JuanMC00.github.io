@@ -11341,7 +11341,7 @@ html {
 
 .page-section {
   padding: 6rem 0;
-  max-width: 1500px;
+  max-width: 1300px;
   padding-bottom: 10px;
   display: block;
   margin: auto;
@@ -11680,7 +11680,7 @@ html {
     text-align: center;   
   }
   #imgAbout{
-   display: none;
+   display: none !important;
   }
   .page-section{
     margin-left: 0px !important;
