@@ -11662,6 +11662,15 @@ html {
   line-height: normal;
 }
 
+
+
+.divCurriculumCategory{
+  display: flex;
+
+  align-items: center;
+  margin: auto;
+}
+
 .divSoftSkills{
   display: flex;
   flex-direction: column;
