@@ -492,6 +492,7 @@ progress {
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .display-1 {
@@ -1363,7 +1364,8 @@ progress {
     --bs-gutter-y: 3rem;
   }
 }
-@media (min-width: 992px) {
+/*XNP ETAG*/
+@media (min-width: 1200px) {
   .col-lg {
     flex: 1 0 0%;
   }
@@ -1427,7 +1429,7 @@ progress {
     flex: 0 0 auto;
     width: 33.33333333%;    
   }
-
+  /*XNP ETAG*/
   .col-lg-5 {
     flex: 0 0 auto;
     width: 41.66666667%;
@@ -11608,10 +11610,10 @@ html {
   background-color: #1a252f;
 }
 
-/* Added */
+/********************************************** CUSTOM **********************************************/
+
 #aspectosAbout{
   font-weight: bold;
-  text-align: center;
 }
 
 #descriptPersonal,
@@ -11644,19 +11646,16 @@ html {
   margin-left: 100px !important;
   margin-right: 100px !important;
   }
-  #descriptGeneral{
-    margin-right: 2rem;
-  }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   #imgAbout{
-   width: 50%;
-   display: block;
-   margin: auto;
+   width: 50% !important;
+   display: block !important;
+   margin: auto !important;
   }
   #descriptGeneral{
-    text-align: center;
+    text-align: center !important;
   }
 }
 
@@ -11673,13 +11672,53 @@ html {
     }
   }
 
+.hobbie{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
 .hobbieIcon{
-  margin-top: 5px;
-  margin-bottom: 5px;
+  align-items: center;
   height: 32px;
   width: 32px;
 }
 
+.hobbieText{
+  padding-left: 15px;
+}
+
+#contact{
+  padding-bottom: 30px;
+}
+
+.divContact{
+  margin-left: 20px;
+  margin-right: 20px;
+  align-items: center;
+}
+
+#descriptContact{
+  font-family: var(--bs-font-sans-serif);
+  font-size: 1.2rem;
+  text-align: justify;
+}
+
+
+
+.colFooter {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+@media (max-width: 550px) {
+  .rowFooter{
+    flex-direction: column !important;
+    align-items: center;
+  }  
+}
 
 /* PROGRESS BARS SKILLS */
 .progress-container {

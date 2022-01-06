@@ -41,6 +41,7 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">Sobre mí</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#competencias">skills</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
                         <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contacto</a></li>
                     </ul>
@@ -78,13 +79,46 @@
                 </div>
                 <!-- About Section Content-->
                 <div class="row">
-                    <div class="col-lg-4 ms-auto"><p class="lead"><b id="aspectosAbout">Aspectos generales:</b><br/><ul id="descriptGeneral">Nombre: Juan Muñoz Calvo<br/>Edad: 21</br>Profesión: Estudiante de 4º de Ingeniería Informática<br/>Residencia: Ciudad Real</ul></p><img id="imgAbout" src="assets/img/perfil.jpg" alt="..." /></div>
-                    <div class="col-lg-4 me-auto"><p class="lead"><b id="aspectosAbout">Aspectos personales:</b><br/><ul id="descriptPersonal">Hola, mi nombre es Juan y soy estudiante de 4º curso de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real (Universidad de Castilla-La Mancha) especializado en las Tecnologías de la Información.<br/>Me considero una persona trabajadora, ordenada y curiosa. Pero creo nuestras aficiones son lo que mejor nos describen:<br/><br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/rubik.png">: Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solo con el cubo hecho sin saber lo que hay detrás<br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/piano.png">: Me considero una persona creativa que le gusta disfruta tambien de la belleza de lo simple.<br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/karate.png">: La mitad de mi vida que practiqué este deporte me aportó disciplina y respeto por los demás <br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/ajedrez.png">: Hola <br/>
-                        <img class="hobbieIcon" src="assets/img/hobbies/viajar.png">: Me gusta mucho descubrir cosas nuevas que pueda incorporar a mi forma de trabajar. Estoy siempre abierto a concoer nuevas tecnologías y neuvas culturas<br/>
+                    <div class="col-lg-5 ms-auto">
+                        <p class="lead"><b id="aspectosAbout">Aspectos generales</b>
+                            <ul id="descriptGeneral">Nombre: Juan Muñoz Calvo<br/>Edad: 21</br>Profesión: Estudiante de 4º de Ingeniería Informática<br/>Residencia: Ciudad Real</ul></p><img id="imgAbout" src="assets/img/perfil.jpg" alt="..." /></div>
+                    <div class="col-lg-5 me-auto">
+                        <p class="lead"><b id="aspectosAbout">Aspectos personales</b>
+                            <ul id="descriptPersonal">Hola, mi nombre es Juan y soy estudiante de 4º curso de Ingeniería Informática en la Escuela Superior de Informática de Ciudad Real (Universidad de Castilla-La Mancha) especializado en las Tecnologías de la Información.<br/>Me considero una persona trabajadora, ordenada y curiosa. Pero creo nuestras aficiones son lo que mejor nos describen:<br/><br/>
+                        
+                        <!-- Hobbies Section -->
+                        <div>
+                            <div class="hobbie">
+                                <div><img class="hobbieIcon" src="assets/img/hobbies/rubik.png"></div>
+                                <div class="hobbieText">
+                                    <span>Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solo con el cubo hecho sin saber lo que hay detrás.<span><br/>
+                                </div>
+                            </div>
+                            <div class="hobbie">
+                                <div><img class="hobbieIcon" src="assets/img/hobbies/piano.png"></div>
+                                <div class="hobbieText">
+                                    <span>Me considero una persona creativa que le gusta disfruta tambien de la belleza de lo simple.<br/></span>
+                                </div>
+                            </div>
+                            <div class="hobbie">
+                                <div><img class="hobbieIcon" src="assets/img/hobbies/karate.png"></div>
+                                <div class="hobbieText">
+                                    <span>La mitad de mi vida que practiqué este deporte me aportó disciplina y respeto por los demás.<br/></span>
+                                </div>
+                            </div>
+                            <div class="hobbie">
+                                <div><img class="hobbieIcon" src="assets/img/hobbies/ajedrez.png"></div>
+                                <div class="hobbieText">
+                                    <span>Siempre he sido una persona cuadriculada que le gusta llegar al fondo de las cosas y no quedarse solo con el cubo hecho sin saber lo que hay detrás<br/></span>
+                                </div>
+                            </div>
+                            <div class="hobbie">
+                                <div><img class="hobbieIcon" src="assets/img/hobbies/viajar.png"></div>
+                                <div class="hobbieText">
+                                    <span>Me gusta mucho descubrir cosas nuevas que pueda incorporar a mi forma de trabajar. Estoy siempre abierto a concoer nuevas tecnologías y neuvas culturas.<br/></span>
+                                </div>
+                            </div>                                                    
+                        </div>
                     </div>
                 </div>
             </div>
@@ -284,6 +318,7 @@
                             <img class="img-fluid" src="assets/img/portfolio/meme.png" alt="..." />
                         </div>
                     </div>
+                    <p>Si quieres ver todos mis proyectos, accede a mi github
                 </div>
             </div>
         </section>
@@ -300,17 +335,19 @@
                     <div class="divider-custom-line"></div>
                 </div>
                 <!-- Contact Section Form-->
-                <div class="row justify-content-center">
-                   <p>Si quieres contactar conmigo para cualquier duda hazlo por medio </p>
+                <div class="row justify-content-center divContact">
+                   <p id="descriptContact">Si quieres contactar conmigo para cualquier duda puedes hacerlo enviandome un mensaje a mi correo electrónico profesional:
+                    <a href="mailto:juanmunozcalvo7@gmail.com" target="_blank">juanmunozcalvo7</a>
+                   </p>
                 </div>
             </div>
         </section>
         <!-- Footer-->
         <footer class="footer text-center">
             <div class="container">
-                <div class="row">
+                <div class="row rowFooter">
                     <!-- Footer Location-->
-                    <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="colFooter mb-2 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Ubicación</h4>
                         <p class="lead mb-0">
                             Ciudad Real 13005
@@ -319,7 +356,7 @@
                         </p>
                     </div>
                     <!-- Footer Social Icons-->
-                    <div class="col-lg-6 mb-5 mb-lg-0">
+                    <div class="colFooter mb-2 mb-lg-0">
                         <h4 class="text-uppercase mb-4">Redes Sociales</h4>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/jmunoz00/" target="_blank"><i class="fab fa-fw fa-linkedin-in"></i></a>
                         <a class="btn btn-outline-light btn-social mx-1" href="https://github.com/JuanMC00" target="_blank"><i class="fab fa-fw fa-github"></i></a>
